@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9803E624F1FA6E00D24CAE /* XBTimerTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9803E524F1FA6E00D24CAE /* XBTimerTestController.m */; };
 		36D6A7D2813991887EB47255 /* Pods_XBGCDTimer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7041EF74E88E53B6FCEC02 /* Pods_XBGCDTimer_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		182025F251E42A3CC62C7B47 /* XBGCDTimer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XBGCDTimer.podspec; path = ../XBGCDTimer.podspec; sourceTree = "<group>"; };
-		25073604DD185E6FED168F00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0A9803E424F1FA6E00D24CAE /* XBTimerTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBTimerTestController.h; sourceTree = "<group>"; };
+		0A9803E524F1FA6E00D24CAE /* XBTimerTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBTimerTestController.m; sourceTree = "<group>"; };
+		182025F251E42A3CC62C7B47 /* XBGCDTimer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XBGCDTimer.podspec; path = ../XBGCDTimer.podspec; sourceTree = "<group>"; };
+		25073604DD185E6FED168F00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		38B937250DA094E9BBDA05A1 /* Pods-XBGCDTimer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBGCDTimer_Example.debug.xcconfig"; path = "Target Support Files/Pods-XBGCDTimer_Example/Pods-XBGCDTimer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3B6F65CC4AFC317598EC2062 /* Pods-XBGCDTimer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBGCDTimer_Example.release.xcconfig"; path = "Target Support Files/Pods-XBGCDTimer_Example/Pods-XBGCDTimer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XBGCDTimer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBGCDTimer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +62,7 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		6040AAC325C7D2A992AFF40F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6040AAC325C7D2A992AFF40F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A53AAB9DC590CBB5CFDCEF1 /* Pods_XBGCDTimer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBGCDTimer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +106,6 @@
 				D659F790FFC2E7FB2DFDAD71 /* Pods-XBGCDTimer_Tests.debug.xcconfig */,
 				9643BD40BFD0CCCBCA54AAF6 /* Pods-XBGCDTimer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +151,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XBViewController.h */,
 				6003F5A6195388D20070C39A /* XBViewController.m */,
+				0A9803E424F1FA6E00D24CAE /* XBTimerTestController.h */,
+				0A9803E524F1FA6E00D24CAE /* XBTimerTestController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -258,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* XBAppDelegate.m in Sources */,
+				0A9803E624F1FA6E00D24CAE /* XBTimerTestController.m in Sources */,
 				6003F5A7195388D20070C39A /* XBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

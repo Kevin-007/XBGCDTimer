@@ -1,0 +1,6 @@
+framework module Pods_XBGCDTimer_Example {
+  umbrella header "Pods-XBGCDTimer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
