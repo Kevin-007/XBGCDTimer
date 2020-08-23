@@ -40,18 +40,18 @@
     _gcdTimer1 = [XBGCDTimer xb_GCDTimerWithSartTime:0 interval:0 queue:nil repeats:NO block:^(XBGCDTimer * _Nonnull timer) {
         NSLog(@"gcdTimer1,%@", [NSThread currentThread]);
     }];
-    
+
     //need fire
     [_gcdTimer1 fire];
-    
-    
+
+
     //global queue, repeats
     NSLog(@"gcdTimer2 start");
     _gcdTimer2 = [XBGCDTimer xb_scheduledGCDTimerWithSartTime:2 interval:1 queue:dispatch_get_global_queue(0, 0) repeats:YES block:^(XBGCDTimer *timer) {
         NSLog(@"gcdTimer2,%@", [NSThread currentThread]);
     }];
-    
-    
+
+
     //global queue, repeats
     NSLog(@"gcdTimer3 start");
     _gcdTimer3 = [XBGCDTimer xb_GCDTimerWithTarget:self selector:@selector(gcdTimerAction1) SartTime:0 interval:2 queue:dispatch_get_global_queue(0, 0) repeats:YES];
@@ -63,6 +63,15 @@
     NSLog(@"gcdTimer4 start");
     _gcdTimer4 = [XBGCDTimer xb_scheduledGCDTimerWithTarget:self selector:@selector(gcdTimerAction2) SartTime:6 interval:1 queue:dispatch_get_main_queue() repeats:NO];
     
+    __weak typeof(self) weakSelf = self;
+   [XBGCDTimer xb_scheduledGCDTimerWithSartTime:2 interval:1 queue:dispatch_get_global_queue(0, 0) repeats:YES block:^(XBGCDTimer *timer) {
+       if (!weakSelf) {
+           [timer invalidate];
+            NSLog(@"stop");
+           return;
+       }
+        NSLog(@"gcdTimer5,%@", [NSThread currentThread]);
+    }];
 }
 
 #pragma mark - Event for GCDTimer
